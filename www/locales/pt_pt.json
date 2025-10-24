@@ -74,6 +74,33 @@
       "not_found": "Módulo não encontrado.",
       "no_examples": "Sem exemplos para este módulo.",
       "load_failed": "Falha ao carregar os dados dos exemplos."
+    },
+    "modules": {
+      "fallback": { "title": "Exemplos para {module}", "summary": "Exemplos de uso e boas práticas para {module}." },
+      "decoration": { "title": "Decoration", "summary": "Decorators e auxiliares de metadata para TypeScript." },
+      "logging": { "title": "Logging", "summary": "Utilitários de logging estruturado e integrações." },
+      "utils": { "title": "Utils", "summary": "Utilitários gerais para projectos Decaf." },
+      "reflection": { "title": "Reflection", "summary": "Auxiliares de reflexão de tipos em runtime." },
+      "decorator-validation": { "title": "Validação com Decorators", "summary": "Padrões de validação com recurso a decorators." },
+      "injectable-decorators": { "title": "Decorators Injectáveis", "summary": "Decorators pensados para injeção de dependências." },
+      "as-zod": { "title": "As Zod", "summary": "Auxiliares Zod e pontes de schema." },
+      "db-decorators": { "title": "DB Decorators", "summary": "Mapeamento e acesso a BD via decorators." },
+      "transactional-decorators": { "title": "Decorators Transacionais", "summary": "Gestão de transações com decorators." },
+      "core": { "title": "Core", "summary": "Primitivas partilhadas nucleares dos módulos Decaf." },
+      "for-http": { "title": "Para HTTP", "summary": "Integrações e auxiliares de cliente/servidor HTTP." },
+      "ui-decorators": { "title": "UI Decorators", "summary": "Padrões de UI suportados por decorators." },
+      "cli": { "title": "CLI", "summary": "Ferramentas e auxiliares de linha de comandos." },
+      "for-couchdb": { "title": "Para CouchDB", "summary": "Integrações e auxiliares para CouchDB." },
+      "for-nano": { "title": "Para Nano", "summary": "Auxiliares baseados em Nano." },
+      "for-pouch": { "title": "Para Pouch", "summary": "Integrações e auxiliares PouchDB." },
+      "for-typeorm": { "title": "Para TypeORM", "summary": "Auxiliares e padrões TypeORM." },
+      "for-fabric": { "title": "Para Fabric", "summary": "Ferramentas e exemplos Hyperledger Fabric." },
+      "for-nest": { "title": "Para Nest", "summary": "Integrações e decorators para NestJS." },
+      "styles": { "title": "Styles", "summary": "Estilos e tokens partilhados para UI." },
+      "for-angular": { "title": "Para Angular", "summary": "Integrações e auxiliares Angular." },
+      "mcp-server": { "title": "MCP Server", "summary": "Componentes de servidor Model Context Protocol." },
+      "for-react-native": { "title": "Para React Native", "summary": "Integrações e auxiliares React Native." },
+      "demo": { "title": "Demo", "summary": "Módulo de demonstração." }
     }
   },
   "showcase": {

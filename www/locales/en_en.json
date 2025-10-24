@@ -74,6 +74,33 @@
       "not_found": "Module not found.",
       "no_examples": "No examples found for this module.",
       "load_failed": "Failed to load examples data."
+    },
+    "modules": {
+      "fallback": { "title": "Examples for {module}", "summary": "Usage examples and best practices for {module}." },
+      "decoration": { "title": "Decoration", "summary": "Decorators and metadata helpers for TypeScript." },
+      "logging": { "title": "Logging", "summary": "Structured logging utilities and integrations." },
+      "utils": { "title": "Utils", "summary": "General purpose utilities for Decaf projects." },
+      "reflection": { "title": "Reflection", "summary": "Runtime type reflection helpers and metadata." },
+      "decorator-validation": { "title": "Decorator Validation", "summary": "Validation patterns powered by decorators." },
+      "injectable-decorators": { "title": "Injectable Decorators", "summary": "Dependency injection friendly decorators." },
+      "as-zod": { "title": "As Zod", "summary": "Zod-related helpers and schema bridges." },
+      "db-decorators": { "title": "DB Decorators", "summary": "Database mapping and access via decorators." },
+      "transactional-decorators": { "title": "Transactional Decorators", "summary": "Transaction handling with decorators." },
+      "core": { "title": "Core", "summary": "Core shared primitives across Decaf modules." },
+      "for-http": { "title": "For HTTP", "summary": "HTTP client/server integrations and helpers." },
+      "ui-decorators": { "title": "UI Decorators", "summary": "UI patterns enabled by decorators." },
+      "cli": { "title": "CLI", "summary": "Command line tools and helpers." },
+      "for-couchdb": { "title": "For CouchDB", "summary": "CouchDB helpers and integrations." },
+      "for-nano": { "title": "For Nano", "summary": "Nano-based database helpers." },
+      "for-pouch": { "title": "For Pouch", "summary": "PouchDB helpers and integrations." },
+      "for-typeorm": { "title": "For TypeORM", "summary": "TypeORM helpers and patterns." },
+      "for-fabric": { "title": "For Fabric", "summary": "Hyperledger Fabric tooling and examples." },
+      "for-nest": { "title": "For Nest", "summary": "NestJS integrations and decorators." },
+      "styles": { "title": "Styles", "summary": "Shared styles and tokens for UI." },
+      "for-angular": { "title": "For Angular", "summary": "Angular integrations and helpers." },
+      "mcp-server": { "title": "MCP Server", "summary": "Model Context Protocol server components." },
+      "for-react-native": { "title": "For React Native", "summary": "React Native integrations and helpers." },
+      "demo": { "title": "Demo", "summary": "Demonstration module." }
     }
   },
   "showcase": {

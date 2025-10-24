@@ -29,8 +29,23 @@
     const t = (k) => window.DecafLocale ? window.DecafLocale.t(k) : k;
     const title = document.getElementById('examples-title');
     const subtitle = document.getElementById('examples-subtitle');
-    title.textContent = t('examples.title').replace('{module}', mod.title || mod.name);
-    const summary = mod.summary && mod.summary.trim() ? mod.summary.trim() : (mdToPlain(mod.description || '').slice(0, 200) + '…');
+    const modKey = (mod.name || mod.base_path || '').trim();
+    let localizedTitle = '';
+    let localizedSummary = '';
+    const humanise = (s) => (s || '').replace(/[-_]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()).trim();
+    const displayName = humanise(mod.title || mod.name || modKey);
+    try {
+      const dict = (window.DecafLocale && window.DecafLocale.dict) || {};
+      const modLoc = dict.examples && dict.examples.modules && dict.examples.modules[modKey];
+      if (modLoc && typeof modLoc.title === 'string') localizedTitle = modLoc.title;
+      if (modLoc && typeof modLoc.summary === 'string') localizedSummary = modLoc.summary;
+    } catch {}
+    // Fall back to a localized generic template for unknown modules
+    const fallbackTitle = (window.DecafLocale && window.DecafLocale.t) ? window.DecafLocale.t('examples.modules.fallback.title').replace('{module}', displayName) : `Examples for ${displayName}`;
+    title.textContent = localizedTitle || fallbackTitle || t('examples.title').replace('{module}', displayName);
+    const genSummary = (mod.summary && mod.summary.trim() ? mod.summary.trim() : (mdToPlain(mod.description || '').slice(0, 200) + '…'));
+    const fallbackSummary = (window.DecafLocale && window.DecafLocale.t) ? window.DecafLocale.t('examples.modules.fallback.summary').replace('{module}', displayName) : genSummary;
+    const summary = localizedSummary || genSummary || fallbackSummary;
     subtitle.textContent = summary || t('examples.no_description');
   }
 
