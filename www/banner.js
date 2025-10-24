@@ -44,7 +44,10 @@
 
   function insertSlogan(afterEl, slogan) {
     if (!slogan) return;
+    // prevent duplicate insertion
+    if (document.getElementById('decaf-slogan-banner')) return;
     const p = document.createElement('p');
+    p.id = 'decaf-slogan-banner';
     p.className = 'text-gray-500 text-sm';
     p.textContent = slogan;
     if (afterEl && afterEl.parentNode) {
@@ -66,8 +69,25 @@
 
   ready(async () => {
     const anchor = findCopyrightP();
-    const json = await loadSlogans();
-    const slogans = flattenSlogans(json);
+    let json = await loadSlogans();
+    let slogans = flattenSlogans(json);
+
+    // Fallback if fetch blocked (e.g., file://) or empty
+    if (!slogans.length) {
+      console.warn('[banner] Could not load assets/slogans.json; using fallback list.');
+      const fallback = {
+        decoration: [
+          { Slogan: 'Add some flair. Annotate with care.' },
+          { Slogan: "TypeScript just got a glow-up." }
+        ],
+        logging: [
+          { Slogan: 'Debug mode, but make it decaf.' },
+          { Slogan: 'Record everything. Panic nothing.' }
+        ]
+      };
+      slogans = flattenSlogans(fallback);
+    }
+
     if (!slogans.length) return;
     insertSlogan(anchor, pickRandom(slogans));
   });
