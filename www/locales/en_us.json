@@ -1,73 +1,85 @@
 {
-  "document.title": "Decaf - Hero Section",
-  "nav.modules": "Modules",
-  "nav.features": "Features",
-  "nav.documentation": "Documentation",
-  "nav.community": "Community",
-  "cta.get_started": "Get Started",
-  "banner.latest_news": "Latest news from Decaf v0.2",
-  "hero.title": "Brewed for Builders.",
-  "hero.subtitle": "As a suite for TypeScript development, Decaf simplifies full-stack and cross-platform development: lightweight, adaptable, and built to meet your needs ✨",
-  "hero.preview_label": "Application Preview",
-  "logo_cloud.title": "Trusted around the world",
-  "logo_cloud.description": "Leading renowned brands uniting for relentless innovation and exceptional excellence, forging truly groundbreaking digital solutions.",
-  "features.kicker": "Power Meets Flexibility",
-  "features.title": "Discover the Power of Modules",
-  "features.description": "Decaf offers a suite of modules to streamline your development. Each module enhances functionality while keeping your workflow efficient.",
-  "features.card1.title": "Seamless Styling",
-  "features.card1.description": "Unlock the full potential of your projects with Decaf's modular tools.",
-  "features.card2.title": "Headless & Modular",
-  "features.card2.description": "Browse our complete list of modules to find the perfect solution",
-  "features.card3.title": "Optimized Performance",
-  "features.card3.description": "Start integrating Decaf modules today to optimize your development workflow.",
-  "hero.cta.explore_modules": "Explore Modules",
-  "hero.cta.documentation": "Documentation",
-  "cta2.title": "Code Smarter, Build Faster.",
-  "cta2.description": "Streamline your development workflow with Decaf and bring efficiency to every project, effortlessly.",
-  "cta2.get_started": "Get Started",
-  "cta2.see_docs": "See Documentation",
-  "showcase.kicker": "Showcasing Innovation",
-  "showcase.task.title": "Manage a dynamic task list.",
-  "showcase.task.description": "Add, view, and remove tasks effortlessly. Use the class methods addTask and removeTask to manage your task list dynamically and display the results.",
-  "showcase.see_how": "See How It Works",
-  "showcase.task.demo_label": "Task Management Demo",
-  "showcase.grade.demo_label": "Grade Tracking Demo",
-  "common.logo_alt": "Decaf Logo",
-  "logo_cloud.brand.transistor": "Transistor",
-  "logo_cloud.brand.reform": "Reform",
-  "logo_cloud.brand.tuple": "Tuple",
-  "logo_cloud.brand.savvycal": "SavvyCal",
-  "logo_cloud.brand.statamic": "Statamic",
-  "faq.kicker": "Answers at Your Fingertips",
-  "faq.title": "Frequently Asked Questions",
-  "faq.description": "Explore our FAQs to learn more about how our platform works, its features, and how it can help you build and manage content with ease.",
-  "faq.q1.title": "What is Vanilla CMS?",
-  "faq.q1.body": "Vanilla CMS is a powerful Headless CMS designed to help developers and content teams manage and deliver content seamlessly across multiple platforms. It provides a flexible API-based approach for ultimate customization.",
-  "faq.q2.title": "What types of projects is Vanilla CMS best suited for?",
-  "faq.q2.body": "Vanilla CMS is ideal for websites, mobile apps, e-commerce platforms, SaaS applications, and any digital product that requires a structured and scalable content management solution.",
-  "faq.q3.title": "Can I integrate Vanilla CMS with my existing tech stack?",
-  "faq.q3.body": "Absolutely! Vanilla CMS is API-first, making it compatible with React, Vue, Next.js, Nuxt.js, Svelte, Flutter, and more. You can fetch content via REST or GraphQL APIs.",
-  "faq.q4.title": "How is Vanilla CMS different from traditional CMS platforms?",
-  "faq.q4.body": "Unlike traditional CMSs, Vanilla CMS decouples the backend from the frontend, giving developers the freedom to use any technology to display content. This makes it more scalable, faster, and adaptable for modern applications.",
-  "faq.q5.title": "Does Vanilla CMS support multiple users and roles?",
-  "faq.q5.body": "Yes! Vanilla CMS comes with Role-Based Access Control (RBAC), allowing you to define permissions for different team members, ensuring security and content integrity.",
-  "faq.q6.title": "Is Vanilla CMS scalable for large enterprises?",
-  "faq.q6.body": "Yes! Our architecture is cloud-based and built for scalability, ensuring your content performs well whether you're a startup or a large enterprise with high traffic demands.",
-  "footer.description": "A Suite for Typescript \nDevelopment",
-  "footer.col.product": "Product",
-  "footer.product.documentation": "Documentation",
-  "footer.product.api": "API Reference",
-  "footer.product.blog": "Blog Posts",
-  "footer.product.support": "Support Center",
-  "footer.col.contact": "Contact Us",
-  "footer.contact.email": "Email Us",
-  "footer.contact.chat": "Live Chat",
-  "footer.contact.feedback": "Feedback",
-  "footer.contact.help": "Help Center",
-  "footer.col.legal": "Legal Information",
-  "footer.legal.terms": "Terms of Service",
-  "footer.legal.privacy": "Privacy Policy",
-  "footer.legal.cookie": "Cookie Policy",
-  "footer.legal.gdpr": "GDPR Compliance",
-  "footer.copyright": "© 2025 Decaf. All rights reserved."
+  "document": {
+    "title": "Decaf - Hero Section"
+  },
+  "nav": {
+    "modules": "Modules",
+    "features": "Features",
+    "documentation": "Documentation",
+    "community": "Community"
+  },
+  "cta": {
+    "get_started": "Get Started"
+  },
+  "banner": {
+    "latest_news": "Latest news from Decaf v0.2"
+  },
+  "hero": {
+    "title": "Brewed for Builders.",
+    "subtitle": "As a suite for TypeScript development, Decaf simplifies full-stack and cross-platform development: lightweight, adaptable, and built to meet your needs ✨",
+    "preview_label": "Application Preview",
+    "cta": {
+      "explore_modules": "Explore Modules",
+      "documentation": "Documentation"
+    }
+  },
+  "logo_cloud": {
+    "title": "Trusted around the world",
+    "description": "Leading renowned brands uniting for relentless innovation and exceptional excellence, forging truly groundbreaking digital solutions.",
+    "brands": [
+      "Transistor",
+      "Reform",
+      "Tuple",
+      "SavvyCal",
+      "Statamic"
+    ]
+  },
+  "features": {
+    "kicker": "Power Meets Flexibility",
+    "title": "Discover the Power of Modules",
+    "description": "Decaf offers a suite of modules to streamline your development. Each module enhances functionality while keeping your workflow efficient.",
+    "cards": [
+      { "title": "Seamless Styling", "description": "Unlock the full potential of your projects with Decaf's modular tools." },
+      { "title": "Headless & Modular", "description": "Browse our complete list of modules to find the perfect solution" },
+      { "title": "Optimized Performance", "description": "Start integrating Decaf modules today to optimize your development workflow." }
+    ]
+  },
+  "cta2": {
+    "title": "Code Smarter, Build Faster.",
+    "description": "Streamline your development workflow with Decaf and bring efficiency to every project, effortlessly.",
+    "get_started": "Get Started",
+    "see_docs": "See Documentation"
+  },
+  "showcase": {
+    "kicker": "Showcasing Innovation",
+    "task": {
+      "title": "Manage a dynamic task list.",
+      "description": "Add, view, and remove tasks effortlessly. Use the class methods addTask and removeTask to manage your task list dynamically and display the results.",
+      "demo_label": "Task Management Demo"
+    },
+    "grade": { "demo_label": "Grade Tracking Demo" },
+    "see_how": "See How It Works"
+  },
+  "faq": {
+    "kicker": "Answers at Your Fingertips",
+    "title": "Frequently Asked Questions",
+    "description": "Explore our FAQs to learn more about how our platform works, its features, and how it can help you build and manage content with ease.",
+    "items": [
+      { "title": "What is Vanilla CMS?", "body": "Vanilla CMS is a powerful Headless CMS designed to help developers and content teams manage and deliver content seamlessly across multiple platforms. It provides a flexible API-based approach for ultimate customization." },
+      { "title": "What types of projects is Vanilla CMS best suited for?", "body": "Vanilla CMS is ideal for websites, mobile apps, e-commerce platforms, SaaS applications, and any digital product that requires a structured and scalable content management solution." },
+      { "title": "Can I integrate Vanilla CMS with my existing tech stack?", "body": "Absolutely! Vanilla CMS is API-first, making it compatible with React, Vue, Next.js, Nuxt.js, Svelte, Flutter, and more. You can fetch content via REST or GraphQL APIs." },
+      { "title": "How is Vanilla CMS different from traditional CMS platforms?", "body": "Unlike traditional CMSs, Vanilla CMS decouples the backend from the frontend, giving developers the freedom to use any technology to display content. This makes it more scalable, faster, and adaptable for modern applications." },
+      { "title": "Does Vanilla CMS support multiple users and roles?", "body": "Yes! Vanilla CMS comes with Role-Based Access Control (RBAC), allowing you to define permissions for different team members, ensuring security and content integrity." },
+      { "title": "Is Vanilla CMS scalable for large enterprises?", "body": "Yes! Our architecture is cloud-based and built for scalability, ensuring your content performs well whether you're a startup or a large enterprise with high traffic demands." }
+    ]
+  },
+  "footer": {
+    "description": "A Suite for Typescript \nDevelopment",
+    "col": { "product": "Product", "contact": "Contact Us", "legal": "Legal Information" },
+    "product": { "documentation": "Documentation", "api": "API Reference", "blog": "Blog Posts", "support": "Support Center" },
+    "contact": { "email": "Email Us", "chat": "Live Chat", "feedback": "Feedback", "help": "Help Center" },
+    "legal": { "terms": "Terms of Service", "privacy": "Privacy Policy", "cookie": "Cookie Policy", "gdpr": "GDPR Compliance" },
+    "copyright": "© 2025 Decaf. All rights reserved."
+  },
+  "common": { "logo_alt": "Decaf Logo" }
 }

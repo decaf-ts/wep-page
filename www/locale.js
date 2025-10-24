@@ -6,6 +6,7 @@ async function loadLocale(localePath = 'locales/en_us.json') {
 }
 
 function getByKey(dict, key) {
+  // Only nested paths are supported
   const parts = key.split('.');
   let cur = dict;
   for (const p of parts) {
@@ -52,19 +53,22 @@ function applyLocale(dict) {
   }
 }
 
-(async function initLocale() {
+async function startLocale() {
   try {
     const dict = await loadLocale();
     applyLocale(dict);
-    // Expose for dynamic usage if needed
     window.DecafLocale = {
       dict,
       t: (key) => getByKey(dict, key),
       apply: () => applyLocale(dict),
     };
   } catch (err) {
-    console.error(err);
-    throw err;
+    console.error('[locale] Failed to initialize locale:', err);
   }
-})();
+}
 
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', startLocale, { once: true });
+} else {
+  startLocale();
+}
