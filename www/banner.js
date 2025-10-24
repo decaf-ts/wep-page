@@ -5,12 +5,12 @@
   }
 
   function findCopyrightP() {
-    const footer = document.querySelector('footer');
+    const footer = document.querySelector("footer");
     if (!footer) return null;
-    const ps = footer.querySelectorAll('p');
+    const ps = footer.querySelectorAll("p");
     for (const p of ps) {
-      const text = (p.textContent || '').trim();
-      if (text.includes('© 2025 Decaf. All rights reserved.')) {
+      const text = (p.textContent || "").trim();
+      if (text.includes("© 2025 Decaf. All rights reserved.")) {
         return p;
       }
     }
@@ -19,7 +19,7 @@
 
   async function loadSlogans() {
     try {
-      const res = await fetch('./assets/slogans.json', { cache: 'no-store' });
+      const res = await fetch("./assets/slogans.json", { cache: "no-store" });
       if (!res.ok) return null;
       const data = await res.json();
       return data;
@@ -29,12 +29,12 @@
   }
 
   function flattenSlogans(json) {
-    if (!json || typeof json !== 'object') return [];
+    if (!json || typeof json !== "object") return [];
     const all = [];
     for (const key of Object.keys(json)) {
       const arr = Array.isArray(json[key]) ? json[key] : [];
       for (const item of arr) {
-        if (item && typeof item === 'object' && item.Slogan) {
+        if (item && typeof item === "object" && item.Slogan) {
           all.push(item.Slogan);
         }
       }
@@ -45,23 +45,23 @@
   function insertSlogan(afterEl, slogan) {
     if (!slogan) return;
     // prevent duplicate insertion
-    if (document.getElementById('decaf-slogan-banner')) return;
-    const p = document.createElement('p');
-    p.id = 'decaf-slogan-banner';
-    p.className = 'text-gray-500 text-sm';
+    if (document.getElementById("decaf-slogan-banner")) return;
+    const p = document.createElement("p");
+    p.id = "decaf-slogan-banner";
+    p.className = "text-gray-500 text-sm";
     p.textContent = slogan;
     if (afterEl && afterEl.parentNode) {
       afterEl.parentNode.insertBefore(p, afterEl.nextSibling);
     } else {
-      const footer = document.querySelector('footer .border-t');
+      const footer = document.querySelector("footer .border-t");
       if (footer) footer.appendChild(p);
-      else document.querySelector('footer')?.appendChild(p);
+      else document.querySelector("footer")?.appendChild(p);
     }
   }
 
   function ready(fn) {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', fn);
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", fn);
     } else {
       fn();
     }
@@ -74,17 +74,7 @@
 
     // Fallback if fetch blocked (e.g., file://) or empty
     if (!slogans.length) {
-      console.warn('[banner] Could not load assets/slogans.json; using fallback list.');
-      const fallback = {
-        decoration: [
-          { Slogan: 'Add some flair. Annotate with care.' },
-          { Slogan: "TypeScript just got a glow-up." }
-        ],
-        logging: [
-          { Slogan: 'Debug mode, but make it decaf.' },
-          { Slogan: 'Record everything. Panic nothing.' }
-        ]
-      };
+      throw new Error("No slogans found.");
       slogans = flattenSlogans(fallback);
     }
 
