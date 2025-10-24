@@ -214,6 +214,7 @@
           </p>
         </div>
         <div
+          id="brands-grid"
           class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
         >
           <img
@@ -277,8 +278,8 @@
           </p>
         </div>
 
-        <!-- Features Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Features Grid (dynamic) -->
+        <div id="features-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Card 1: Seamless Styling -->
           <div class="flex flex-col">
             <div class="mb-6">
@@ -1188,7 +1189,7 @@
           <!-- FAQ Grid -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 w-full">
             <!-- Left Column -->
-            <div class="flex flex-col gap-12">
+            <div id="faq-left" class="flex flex-col gap-12">
               <!-- FAQ 1 -->
               <div class="flex flex-col gap-4">
                 <h3 class="font-jakarta font-bold text-lg text-gray-900" data-locale="faq.items.0.title">
@@ -1221,7 +1222,7 @@
             </div>
 
             <!-- Right Column -->
-            <div class="flex flex-col gap-12">
+            <div id="faq-right" class="flex flex-col gap-12">
               <!-- FAQ 4 -->
               <div class="flex flex-col gap-4">
                 <h3 class="font-jakarta font-bold text-lg text-gray-900" data-locale="faq.items.3.title">
