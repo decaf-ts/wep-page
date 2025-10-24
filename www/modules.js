@@ -52,13 +52,10 @@
     textWrap.appendChild(main);
 
     const ctaWrap = document.createElement('div');
-    const cta = document.createElement('button');
+    const cta = document.createElement('a');
     cta.className = 'bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300';
     cta.textContent = t('modules.see_examples');
-    cta.addEventListener('click', () => {
-      // simple toggle for examples panel
-      details.hidden = !details.hidden;
-    });
+    cta.href = `examples.html?module=${encodeURIComponent(mod.name || mod.base_path || '')}`;
     ctaWrap.appendChild(cta);
 
     leftContent.appendChild(textWrap);
@@ -78,27 +75,7 @@
     inner.appendChild(iconWrap);
     inner.appendChild(label);
 
-    const details = document.createElement('div');
-    details.hidden = true;
-    details.className = 'mt-6 text-left max-w-full';
-    // Examples list
-    if (Array.isArray(mod.examples) && mod.examples.length) {
-      mod.examples.slice(0, 2).forEach((ex) => {
-        const block = document.createElement('pre');
-        block.className = 'bg-white rounded-lg p-4 text-sm overflow-x-auto border border-gray-200 mb-4';
-        const code = document.createElement('code');
-        code.textContent = ex.trim();
-        block.appendChild(code);
-        details.appendChild(block);
-      });
-    } else {
-      const none = document.createElement('p');
-      none.className = 'text-gray-500';
-      none.textContent = t('modules.no_examples');
-      details.appendChild(none);
-    }
-
-    inner.appendChild(details);
+    // Preview label/icon only; detailed examples moved to examples.html
     panel.appendChild(inner);
     rightVisual.appendChild(panel);
 
@@ -127,4 +104,3 @@
     document.addEventListener('DOMContentLoaded', start, { once: true });
   } else { start(); }
 })();
-

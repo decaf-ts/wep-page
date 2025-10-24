@@ -62,6 +62,20 @@
     "get_started": "Começar",
     "see_docs": "Ver Documentação"
   },
+  "examples": {
+    "document_title": "Decaf - Exemplos",
+    "title": "Exemplos para {module}",
+    "no_description": "Sem descrição disponível.",
+    "code": "Código",
+    "example_title": "Exemplo {n} · {lang}",
+    "example_how_when": "Quando usar: aplique este excerto em cenários típicos onde o módulo é integrado na sua aplicação ou scripts.",
+    "errors": {
+      "no_module": "Nenhum módulo especificado. Acrescente ?module=<nome> ao URL.",
+      "not_found": "Módulo não encontrado.",
+      "no_examples": "Sem exemplos para este módulo.",
+      "load_failed": "Falha ao carregar os dados dos exemplos."
+    }
+  },
   "showcase": {
     "kicker": "A mostrar Inovação",
     "task": {

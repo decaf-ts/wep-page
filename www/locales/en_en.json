@@ -62,6 +62,20 @@
     "get_started": "Get Started",
     "see_docs": "See Documentation"
   },
+  "examples": {
+    "document_title": "Decaf - Examples",
+    "title": "Examples for {module}",
+    "no_description": "No description available.",
+    "code": "Code",
+    "example_title": "Example {n} · {lang}",
+    "example_how_when": "When to use: apply this snippet in typical setups where this module integrates in your app or scripts.",
+    "errors": {
+      "no_module": "No module specified. Append ?module=<name> to the URL.",
+      "not_found": "Module not found.",
+      "no_examples": "No examples found for this module.",
+      "load_failed": "Failed to load examples data."
+    }
+  },
   "showcase": {
     "kicker": "Showcasing Innovation",
     "task": {
