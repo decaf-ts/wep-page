@@ -265,22 +265,27 @@ async function startLocale() {
   try {
     const dict = await loadLocale();
     applyLocale(dict);
-    renderFeatures(dict);
-    renderFaq(dict);
-    renderBrands(dict);
+    if (window.DecafContent && typeof window.DecafContent.renderAll === 'function') {
+      window.DecafContent.renderAll(dict);
+    }
     window.DecafLocale = {
       dict,
       t: (key) => getByKey(dict, key),
-      apply: () => { applyLocale(dict); renderFeatures(dict); renderFaq(dict); },
+      apply: () => {
+        applyLocale(dict);
+        if (window.DecafContent && typeof window.DecafContent.renderAll === 'function') {
+          window.DecafContent.renderAll(dict);
+        }
+      },
       setLocale: async (code) => {
         if (!code || code === CURRENT_LOCALE) return;
         CURRENT_LOCALE = code;
         const newDict = await loadLocale(`locales/${CURRENT_LOCALE}.json`);
         window.DecafLocale.dict = newDict;
         applyLocale(newDict);
-        renderFeatures(newDict);
-        renderFaq(newDict);
-        renderBrands(newDict);
+        if (window.DecafContent && typeof window.DecafContent.renderAll === 'function') {
+          window.DecafContent.renderAll(newDict);
+        }
       }
     };
   } catch (err) {
