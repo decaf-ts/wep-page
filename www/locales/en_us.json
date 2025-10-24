@@ -27,11 +27,11 @@
     "title": "Trusted around the world",
     "description": "Leading renowned brands uniting for relentless innovation and exceptional excellence, forging truly groundbreaking digital solutions.",
     "brands": [
-      "Transistor",
-      "Reform",
-      "Tuple",
-      "SavvyCal",
-      "Statamic"
+      { "name": "Transistor", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg" },
+      { "name": "Reform", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg" },
+      { "name": "Tuple", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg" },
+      { "name": "SavvyCal", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg" },
+      { "name": "Statamic", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg" }
     ]
   },
   "features": {

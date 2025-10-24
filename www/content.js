@@ -155,23 +155,27 @@
     const brands = brandsRaw.map((b) => typeof b === 'string' ? { name: b } : b);
     const targetCount = 5;
     const list = Array.from({ length: targetCount }, (_, i) => brands[i % (brands.length || 1)]);
-    const urlByName = {
-      'Transistor': 'https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg',
-      'Reform': 'https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg',
-      'Tuple': 'https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg',
-      'SavvyCal': 'https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg',
-      'Statamic': 'https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg',
-    };
     list.forEach((b, i) => {
-      const img = document.createElement('img');
-      img.className = 'col-span-2 max-h-12 w-full object-contain lg:col-span-1';
-      if (i === 3) img.className = 'col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1';
-      if (i === 4) img.className = 'col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1';
-      img.width = 158; img.height = 48;
-      const name = b && (b.alt || b.name) || 'Brand';
-      img.alt = name;
-      img.src = (b && b.src) ? b.src : (urlByName[b && b.name] || '');
-      grid.appendChild(img);
+      const clsBase = 'col-span-2 max-h-12 w-full object-contain lg:col-span-1';
+      const classes = [clsBase];
+      if (i === 3) classes[0] = 'col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1';
+      if (i === 4) classes[0] = 'col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1';
+      const altText = (b && (b.alt || b.name)) || 'Brand';
+      if (b && b.svg) {
+        const wrap = document.createElement('div');
+        wrap.className = classes.join(' ');
+        wrap.setAttribute('role', 'img');
+        wrap.setAttribute('aria-label', altText);
+        wrap.innerHTML = b.svg;
+        grid.appendChild(wrap);
+      } else {
+        const img = document.createElement('img');
+        img.className = classes.join(' ');
+        img.width = 158; img.height = 48;
+        img.alt = altText;
+        img.src = (b && b.src) ? b.src : '';
+        grid.appendChild(img);
+      }
     });
   }
 
@@ -190,4 +194,3 @@
     renderAll,
   };
 })();
-
