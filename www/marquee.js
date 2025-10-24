@@ -23,10 +23,8 @@
 
   function setup(container, opts = {}) {
     const gapPx = typeof opts.gapPx === 'number' ? opts.gapPx : 32;
-    let pxPerSec = typeof opts.pxPerSec === 'number' ? opts.pxPerSec : 60;
     const direction = opts.direction === 'right' ? 'right' : 'left';
-    if (opts.direction === 'right' && pxPerSec > 0) pxPerSec = -pxPerSec; // moving content to the right visually means negative translate
-    if (opts.direction !== 'right' && pxPerSec < 0) pxPerSec = -pxPerSec; // ensure left uses positive for internal math
+    const speed = Math.abs(typeof opts.pxPerSec === 'number' ? opts.pxPerSec : 60);
     const fade = opts.fade !== false;
     const fadeWidth = typeof opts.fadeWidth === 'number' ? opts.fadeWidth : 48;
 
@@ -99,8 +97,8 @@
     const step = (now) => {
       const dt = (now - last) / 1000; last = now;
       if (!paused) {
-        // Internal convention: positive offset moves content left; negative moves right
-        const internalSpeed = (direction === 'right') ? -pxPerSec : pxPerSec;
+        // Positive offset => moves content left; negative => moves right
+        const internalSpeed = (direction === 'left') ? speed : -speed;
         offset += internalSpeed * dt;
         // Wrap at baseWidth boundaries to keep the loop seamless
         if (offset >= baseWidth) offset -= baseWidth;
