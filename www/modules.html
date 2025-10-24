@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-locale-title="modules.document_title">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: { extend: { fontFamily: { inter: ["Inter","sans-serif"], jakarta: ["Plus Jakarta Sans","sans-serif"] } } }
+      };
+    </script>
+  </head>
+  <body class="font-inter">
+    <!-- Hero/Header clone with nav -->
+    <section class="bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 relative overflow-hidden">
+      <nav class="relative z-10 w-full px-16 py-6">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="assets/logo_contrast.svg" data-locale-attr="alt:common.logo_alt" alt="common.logo_alt" />
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a data-locale="nav.modules" href="modules.html" class="text-white hover:text-white/80 transition-colors">nav.modules</a>
+            <a data-locale="nav.features" href="index.html#features" class="text-white hover:text-white/80 transition-colors">nav.features</a>
+            <a data-locale="nav.documentation" href="#" class="text-white hover:text-white/80 transition-colors">nav.documentation</a>
+            <a data-locale="nav.community" href="#" class="text-white hover:text-white/80 transition-colors">nav.community</a>
+          </div>
+          <button data-locale="cta.get_started" class="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full hover:bg-white/30 transition-all duration-300">cta.get_started</button>
+        </div>
+      </nav>
+
+      <div class="relative z-10 flex flex-col items-center justify-center px-4 py-16 text-center">
+        <h1 data-locale="modules.title" class="font-jakarta font-bold text-white text-5xl md:text-6xl leading-tight tracking-tight">modules.title</h1>
+        <p data-locale="modules.subtitle" class="text-white/90 text-lg leading-relaxed max-w-3xl mt-6">modules.subtitle</p>
+      </div>
+
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+      </div>
+    </section>
+
+    <!-- Modules Showcase List -->
+    <section class="py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-16">
+        <div id="modules-list" class="flex flex-col gap-24"></div>
+      </div>
+    </section>
+
+    <!-- Footer clone (lightweight) -->
+    <footer class="bg-white border-t border-gray-200 py-10">
+      <div class="max-w-7xl mx-auto px-16 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <img src="assets/logo-footer.png" class="h-8 w-auto" data-locale-attr="alt:common.logo_alt" alt="common.logo_alt" />
+          <p class="text-gray-600" data-locale="footer.description">footer.description</p>
+        </div>
+        <p class="text-gray-500" data-locale="footer.copyright">footer.copyright</p>
+      </div>
+    </footer>
+
+    <script src="content.js"></script>
+    <script src="locale.js"></script>
+    <script src="modules.js"></script>
+  </body>
+  </html>
+
