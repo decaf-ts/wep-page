@@ -37,7 +37,7 @@
     // Snapshot current children (do not mutate originals)
     const originals = Array.from(container.children);
     const hasItems = originals.length > 0;
-    // Preserve layout height so marquee doesn't collapse or reflow surrounding content
+    // Preserve layout height baseline (avoid jump), but allow growth if needed
     const preservedHeight = container.clientHeight;
     // Do not affect caller layout: preserve size, overflow hidden
     const prevPosition = getComputedStyle(container).position;
@@ -49,22 +49,29 @@
     const track = document.createElement('div');
     track.style.display = 'flex';
     track.style.flexWrap = 'nowrap';
-    track.style.alignItems = 'stretch';
+    track.style.alignItems = 'flex-start';
     track.style.gap = gapPx + 'px';
     track.style.willChange = 'transform';
     container.appendChild(track);
-    // Lock height to previous value to preserve layout
-    if (preservedHeight) container.style.height = preservedHeight + 'px';
+    // Prefer min-height to avoid truncation while preventing layout collapse
+    if (preservedHeight) container.style.minHeight = preservedHeight + 'px';
 
     // Mode determines how we clone: each child vs. whole set as one unit
     const mode = opts.mode === 'cloneContainer' ? 'cloneContainer' : 'cloneItems';
     const appendSetOnce = () => {
       if (mode === 'cloneContainer') {
-        const wrap = document.createElement('div');
-        // Keep original layout rules inside
-        wrap.style.display = 'block';
-        originals.forEach((n) => wrap.appendChild(n.cloneNode(true)));
-        track.appendChild(wrap);
+        // Create a fixed-width page equal to the current container width
+        const page = document.createElement('div');
+        page.style.flex = '0 0 auto';
+        page.style.width = container.clientWidth + 'px';
+        page.style.display = 'block';
+        // Inner wrapper mirrors the original container classes to keep the exact geometry
+        const inner = document.createElement('div');
+        inner.className = container.className || '';
+        inner.style.width = '100%';
+        originals.forEach((n) => inner.appendChild(n.cloneNode(true)));
+        page.appendChild(inner);
+        track.appendChild(page);
       } else {
         originals.forEach((n) => track.appendChild(n.cloneNode(true)));
       }

@@ -5,7 +5,13 @@
     if (!window.DecafMarquee) return;
     const brands = document.getElementById('brands-grid');
     if (brands && brands.children.length) {
-      window.DecafMarquee.setup(brands, { direction: 'left', pxPerSec: 30, gapPx: 32, fade: true, fadeWidth: 64 });
+      // Use cloneContainer to preserve the single-row, 5-items geometry exactly
+      window.DecafMarquee.setup(brands, { direction: 'left', pxPerSec: 30, gapPx: 32, fade: true, fadeWidth: 24, mode: 'cloneContainer' });
+    }
+    const modules = document.getElementById('features-grid');
+    if (modules && modules.children.length) {
+      // Apply marquee while preserving the original 2x4 grid geometry
+      window.DecafMarquee.setup(modules, { direction: 'right', pxPerSec: 30, gapPx: 48, fade: true, fadeWidth: 24, mode: 'cloneContainer' });
     }
   }
 
