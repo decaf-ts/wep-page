@@ -48,9 +48,34 @@
     if (document.getElementById("decaf-slogan-banner")) return;
     const p = document.createElement("p");
     p.id = "decaf-slogan-banner";
-    p.className = "text-gray-500 text-sm";
+    // Centered in the footer row on larger screens; centered full-width on mobile
+    p.className = "text-gray-500 text-sm text-center w-full sm:flex-1";
     p.textContent = slogan;
-    if (afterEl && afterEl.parentNode) {
+
+    // Target the footer bottom row
+    const row = document.querySelector("footer .border-t > div");
+    if (row) {
+      row.classList.add("w-full");
+      const copyright = row.querySelector("p");
+      const socials = row.lastElementChild;
+      // Insert the banner after the copyright (center position between left and right)
+      if (copyright && copyright.parentNode === row) {
+        row.insertBefore(p, copyright.nextSibling);
+      } else if (socials) {
+        row.insertBefore(p, socials);
+      } else {
+        row.appendChild(p);
+      }
+      // Ensure layout aligns: left, center, right
+      if (copyright) {
+        copyright.classList.add("w-full", "sm:flex-1", "sm:text-left");
+      }
+      if (socials && socials instanceof HTMLElement) {
+        socials.classList.add("w-full", "sm:flex-1");
+        // make sure socials container aligns right on sm+
+        socials.classList.add("flex", "justify-center", "sm:justify-end");
+      }
+    } else if (afterEl && afterEl.parentNode) {
       afterEl.parentNode.insertBefore(p, afterEl.nextSibling);
     } else {
       const footer = document.querySelector("footer .border-t");
@@ -68,14 +93,16 @@
   }
 
   ready(async () => {
-    const anchor = findCopyrightP();
+    // Prefer inserting into the footer row so it can be centered between left/right
+    const footerRow = document.querySelector('footer .border-t > div');
+    const anchor = footerRow || findCopyrightP();
     let json = await loadSlogans();
     let slogans = flattenSlogans(json);
 
     // Fallback if fetch blocked (e.g., file://) or empty
     if (!slogans.length) {
-      throw new Error("No slogans found.");
-      slogans = flattenSlogans(fallback);
+      console.warn("[banner] No slogans found; skipping banner slogan.");
+      return;
     }
 
     if (!slogans.length) return;
