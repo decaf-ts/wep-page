@@ -1,16 +1,12 @@
 {
-  "document": {
-    "title": "Decaf - Hero Section"
-  },
+  "document": { "title": "Decaf - Hero Section" },
   "nav": {
     "modules": "Modules",
     "features": "Features",
     "documentation": "Documentation",
     "community": "Community"
   },
-  "cta": {
-    "get_started": "Get Started"
-  },
+  "cta": { "get_started": "Get Started" },
   "banner": {
     "latest_news": "Latest news from Decaf v0.2",
     "slogans": [
@@ -24,10 +20,7 @@
     "title": "Brewed for Builders.",
     "subtitle": "As a suite for TypeScript development, Decaf simplifies full-stack and cross-platform development: lightweight, adaptable, and built to meet your needs ✨",
     "preview_label": "Application Preview",
-    "cta": {
-      "explore_modules": "Explore Modules",
-      "documentation": "Documentation"
-    }
+    "cta": { "explore_modules": "Explore Modules", "documentation": "Documentation" }
   },
   "logo_cloud": {
     "title": "Trusted around the world",
@@ -49,7 +42,7 @@
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"Sliders\"><g id=\"Group\"><circle cx=\"6.8\" cy=\"16.5\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"15.6\" cy=\"10.7\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"24.3\" cy=\"20.4\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M6.8 4.9V13.6\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M24.3 4.9V17.5\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 4.9V7.8\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M6.8 19.4V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M24.3 23.3V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 13.6V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></g></svg>" },
       { "title": "Headless & Modular", "description": "Browse our complete list of modules to find the perfect solution",
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"ListChecks\"><path d=\"M15.6 7.8H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 15.6H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 23.3H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 7.8L6.8 9.7L10.7 5.8\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 15.6L6.8 17.5L10.7 13.6\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 23.3L6.8 25.3L10.7 21.4\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></svg>" },
-      { "title": "Optimized Performance", "description": "Start integrating Decaf modules today to optimize your development workflow.",
+      { "title": "Optimised Performance", "description": "Start integrating Decaf modules today to optimise your development workflow.",
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"Rocket\"><path d=\"M16 2L26 12L20 18L12 10L16 2Z\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M14 14L18 18\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M6 22L10 18L14 22L10 26L6 22Z\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M2 30L8 28L10 26\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></svg>" }
     ]
   },
@@ -74,7 +67,7 @@
     "title": "Frequently Asked Questions",
     "description": "Explore our FAQs to learn more about how our platform works, its features, and how it can help you build and manage content with ease.",
     "items": [
-      { "title": "What is Vanilla CMS?", "body": "Vanilla CMS is a powerful Headless CMS designed to help developers and content teams manage and deliver content seamlessly across multiple platforms. It provides a flexible API-based approach for ultimate customization." },
+      { "title": "What is Vanilla CMS?", "body": "Vanilla CMS is a powerful Headless CMS designed to help developers and content teams manage and deliver content seamlessly across multiple platforms. It provides a flexible API-based approach for ultimate customisation." },
       { "title": "What types of projects is Vanilla CMS best suited for?", "body": "Vanilla CMS is ideal for websites, mobile apps, e-commerce platforms, SaaS applications, and any digital product that requires a structured and scalable content management solution." },
       { "title": "Can I integrate Vanilla CMS with my existing tech stack?", "body": "Absolutely! Vanilla CMS is API-first, making it compatible with React, Vue, Next.js, Nuxt.js, Svelte, Flutter, and more. You can fetch content via REST or GraphQL APIs." },
       { "title": "How is Vanilla CMS different from traditional CMS platforms?", "body": "Unlike traditional CMSs, Vanilla CMS decouples the backend from the frontend, giving developers the freedom to use any technology to display content. This makes it more scalable, faster, and adaptable for modern applications." },
@@ -102,7 +95,7 @@
     "cta": { "get_started": "Header button: primary CTA" },
     "banner": {
       "latest_news": "Small top banner label announcing latest news",
-      "slogans": "Footer random slogan: short catchy one-liners"
+      "slogans": "Footer random slogan: short, catchy one-liners"
     },
     "hero": {
       "title": "Main heading in the hero section",
@@ -179,3 +172,4 @@
     }
   }
 }
+

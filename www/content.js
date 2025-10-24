@@ -160,7 +160,7 @@
       const classes = [clsBase];
       if (i === 3) classes[0] = 'col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1';
       if (i === 4) classes[0] = 'col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1';
-      const altText = (b && (b.alt || b.name)) || 'Brand';
+      const altText = (b && (b.alt || b.name)) || ((dict && dict.common && dict.common.brand_alt) || '');
       if (b && b.svg) {
         const wrap = document.createElement('div');
         wrap.className = classes.join(' ');

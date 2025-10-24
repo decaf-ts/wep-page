@@ -150,7 +150,7 @@ function renderBrands(dict) {
     if (i === 3) img.className = 'col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1';
     if (i === 4) img.className = 'col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1';
     img.width = 158; img.height = 48;
-    const altKey = b && b.name ? b.name : 'Brand';
+    const altKey = b && b.name ? b.name : (dict && dict.common && dict.common.brand_alt ? dict.common.brand_alt : '');
     img.alt = altKey;
     img.src = (b && b.src) ? b.src : (urlByName[altKey] || '');
     grid.appendChild(img);

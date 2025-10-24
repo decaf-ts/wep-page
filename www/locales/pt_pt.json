@@ -1,8 +1,8 @@
 {
-  "document": { "title": "Decaf - Seção Hero" },
+  "document": { "title": "Decaf - Secção Hero" },
   "nav": {
     "modules": "Módulos",
-    "features": "Recursos",
+    "features": "Funcionalidades",
     "documentation": "Documentação",
     "community": "Comunidade"
   },
@@ -10,21 +10,21 @@
   "banner": {
     "latest_news": "Últimas novidades do Decaf v0.2",
     "slogans": [
-      "Construa com ousadia. Feito para devs.",
-      "Modular por design. Produtivo por padrão.",
+      "Constrói com ousadia. Feito para devs.",
+      "Modular por design. Produtivo por omissão.",
       "Menos boilerplate. Mais entregas.",
-      "TypeScript primeiro. Em todo lugar."
+      "TypeScript primeiro. Em todo o lado."
     ]
   },
   "hero": {
     "title": "Preparado para Criadores.",
-    "subtitle": "Como um conjunto para desenvolvimento em TypeScript, o Decaf simplifica o desenvolvimento full‑stack e multiplataforma: leve, adaptável e feito para suas necessidades ✨",
-    "preview_label": "Prévia da Aplicação",
+    "subtitle": "Enquanto suíte para desenvolvimento em TypeScript, o Decaf simplifica o desenvolvimento full‑stack e multiplataforma: leve, adaptável e criado para as tuas necessidades ✨",
+    "preview_label": "Pré-visualização da Aplicação",
     "cta": { "explore_modules": "Explorar Módulos", "documentation": "Documentação" }
   },
   "logo_cloud": {
-    "title": "Confiado ao redor do mundo",
-    "description": "Marcas renomadas unidas para inovação incansável e excelência excepcional, criando soluções digitais verdadeiramente inovadoras.",
+    "title": "De confiança em todo o mundo",
+    "description": "Marcas de renome unidas para inovação incansável e excelência excepcional, criando soluções digitais verdadeiramente inovadoras.",
     "brands": [
       { "name": "Transistor", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg" },
       { "name": "Reform", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg" },
@@ -34,61 +34,61 @@
     ]
   },
   "features": {
-    "kicker": "Poder com Flexibilidade",
-    "title": "Descubra o Poder dos Módulos",
-    "description": "O Decaf oferece um conjunto de módulos para agilizar seu desenvolvimento. Cada módulo aumenta a funcionalidade mantendo o fluxo eficiente.",
+    "kicker": "Poder e Flexibilidade",
+    "title": "Descobre o Poder dos Módulos",
+    "description": "O Decaf oferece uma suíte de módulos para agilizar o teu desenvolvimento. Cada módulo aumenta a funcionalidade mantendo o fluxo eficiente.",
     "cards": [
-      { "title": "Estilização Sem Esforço", "description": "Liberte todo o potencial dos seus projetos com as ferramentas modulares do Decaf.",
+      { "title": "Estilização Fluida", "description": "Liberta todo o potencial dos teus projectos com as ferramentas modulares do Decaf.",
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"Sliders\"><g id=\"Group\"><circle cx=\"6.8\" cy=\"16.5\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"15.6\" cy=\"10.7\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"24.3\" cy=\"20.4\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M6.8 4.9V13.6\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M24.3 4.9V17.5\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 4.9V7.8\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M6.8 19.4V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M24.3 23.3V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 13.6V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></g></svg>" },
-      { "title": "Headless e Modular", "description": "Veja nossa lista completa de módulos para encontrar a solução ideal",
+      { "title": "Headless e Modular", "description": "Consulta a nossa lista completa de módulos para encontrares a solução ideal",
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"ListChecks\"><path d=\"M15.6 7.8H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 15.6H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 23.3H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 7.8L6.8 9.7L10.7 5.8\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 15.6L6.8 17.5L10.7 13.6\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 23.3L6.8 25.3L10.7 21.4\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></svg>" },
-      { "title": "Desempenho Otimizado", "description": "Comece a integrar módulos Decaf hoje para otimizar seu fluxo de trabalho.",
+      { "title": "Desempenho Optimizado", "description": "Começa hoje a integrar módulos Decaf para optimizares o teu fluxo de trabalho.",
         "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"Rocket\"><path d=\"M16 2L26 12L20 18L12 10L16 2Z\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M14 14L18 18\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M6 22L10 18L14 22L10 26L6 22Z\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M2 30L8 28L10 26\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></svg>" }
     ]
   },
   "cta2": {
-    "title": "Codifique Melhor, Construa Mais Rápido.",
-    "description": "Agilize seu desenvolvimento com o Decaf e traga eficiência para cada projeto, sem esforço.",
+    "title": "Programa Melhor, Constrói Mais Rápido.",
+    "description": "Agiliza o teu desenvolvimento com o Decaf e traz eficiência a cada projecto, sem esforço.",
     "get_started": "Começar",
     "see_docs": "Ver Documentação"
   },
   "showcase": {
-    "kicker": "Mostrando Inovação",
+    "kicker": "A mostrar Inovação",
     "task": {
-      "title": "Gerencie uma lista de tarefas dinâmica.",
-      "description": "Adicione, veja e remova tarefas com facilidade. Use os métodos addTask e removeTask para gerenciar dinamicamente sua lista e exibir os resultados.",
+      "title": "Gere uma lista de tarefas dinâmica.",
+      "description": "Adiciona, vê e remove tarefas facilmente. Usa os métodos addTask e removeTask para gerir a lista dinamicamente e mostrar os resultados.",
       "demo_label": "Demonstração de Tarefas"
     },
     "grade": { "demo_label": "Demonstração de Notas" },
-    "see_how": "Veja Como Funciona"
+    "see_how": "Ver Como Funciona"
   },
   "faq": {
-    "kicker": "Respostas ao Seu Alcance",
+    "kicker": "Respostas ao Alcance",
     "title": "Perguntas Frequentes",
-    "description": "Explore nossas FAQs para saber mais sobre como a plataforma funciona, seus recursos e como ela pode ajudar a criar e gerenciar conteúdo com facilidade.",
+    "description": "Explora as nossas FAQs para saberes mais sobre como a plataforma funciona, as funcionalidades e como te pode ajudar a construir e gerir conteúdo.",
     "items": [
-      { "title": "O que é o Vanilla CMS?", "body": "O Vanilla CMS é um poderoso Headless CMS que ajuda equipes de desenvolvimento e conteúdo a gerenciar e entregar conteúdo em várias plataformas, com uma abordagem flexível baseada em API." },
-      { "title": "Para quais projetos o Vanilla CMS é mais indicado?", "body": "Ideal para sites, apps mobile, e‑commerce, aplicações SaaS e qualquer produto digital que exija gestão de conteúdo estruturada e escalável." },
-      { "title": "Posso integrar o Vanilla CMS ao meu stack atual?", "body": "Com certeza! O Vanilla CMS é API-first e compatível com React, Vue, Next.js, Nuxt.js, Svelte, Flutter e mais. Você pode buscar conteúdo via REST ou GraphQL." },
-      { "title": "Como o Vanilla CMS difere de CMSs tradicionais?", "body": "Ele desacopla o backend do frontend, permitindo usar qualquer tecnologia para exibir conteúdo. Isso o torna mais escalável, rápido e adaptável." },
-      { "title": "Há suporte a múltiplos usuários e papéis?", "body": "Sim! O Vanilla CMS possui RBAC, permitindo definir permissões para diferentes membros, garantindo segurança e integridade do conteúdo." },
-      { "title": "É escalável para grandes empresas?", "body": "Sim! Nossa arquitetura é baseada em nuvem e pronta para escalar, garantindo ótimo desempenho em qualquer carga." }
+      { "title": "O que é o Vanilla CMS?", "body": "O Vanilla CMS é um poderoso Headless CMS para ajudar equipas de desenvolvimento e conteúdo a gerir e entregar conteúdo em várias plataformas. Fornece uma abordagem flexível baseada em API para máxima personalização." },
+      { "title": "Para que projectos é mais indicado?", "body": "Ideal para sites, apps móveis, e‑commerce, aplicações SaaS e qualquer produto digital que necessite de gestão de conteúdo estruturada e escalável." },
+      { "title": "Integra com o meu stack?", "body": "Claro! O Vanilla CMS é API-first e compatível com React, Vue, Next.js, Nuxt.js, Svelte, Flutter e mais. Podes obter conteúdo via REST ou GraphQL." },
+      { "title": "Diferenças para CMS tradicionais?", "body": "Desacopla o backend do frontend, dando liberdade para usar qualquer tecnologia no frontend. Mais escalável, rápido e adaptável." },
+      { "title": "Suporta múltiplos utilizadores e papéis?", "body": "Sim! Vem com RBAC, permitindo definir permissões por perfil, garantindo segurança e integridade do conteúdo." },
+      { "title": "Escala para grandes empresas?", "body": "Sim! A arquitectura é cloud e preparada para escalar, garantindo bom desempenho em qualquer carga." }
     ]
   },
   "footer": {
-    "description": "Uma suíte para desenvolvimento \nTypeScript",
-    "col": { "product": "Produto", "contact": "Contato", "legal": "Informações Legais" },
-    "product": { "documentation": "Documentação", "api": "Referência da API", "blog": "Artigos", "support": "Central de Suporte" },
-    "contact": { "email": "E‑mail", "chat": "Chat ao Vivo", "feedback": "Feedback", "help": "Ajuda" },
-    "legal": { "terms": "Termos de Serviço", "privacy": "Política de Privacidade", "cookie": "Política de Cookies", "gdpr": "Conformidade GDPR" },
+    "description": "Uma Suíte para Desenvolvimento \nTypeScript",
+    "col": { "product": "Produto", "contact": "Contacto", "legal": "Informação Legal" },
+    "product": { "documentation": "Documentação", "api": "Referência da API", "blog": "Artigos", "support": "Centro de Suporte" },
+    "contact": { "email": "Email", "chat": "Chat ao Vivo", "feedback": "Feedback", "help": "Centro de Ajuda" },
+    "legal": { "terms": "Termos de Serviço", "privacy": "Política de Privacidade", "cookie": "Política de Cookies", "gdpr": "Conformidade RGPD" },
     "copyright": "© 2025 Decaf. Todos os direitos reservados."
   },
   "common": { "logo_alt": "Logo Decaf", "brand_alt": "Marca" },
   "contexts": {
     "document": { "title": "Título da aba do navegador" },
     "nav": {
-      "modules": "Navegação: link para os módulos",
-      "features": "Navegação: rolar para a seção de recursos",
+      "modules": "Navegação: link para módulos",
+      "features": "Navegação: rolar para funcionalidades",
       "documentation": "Navegação: link para documentação",
       "community": "Navegação: link para comunidade"
     },
@@ -98,52 +98,52 @@
       "slogans": "Slogan aleatório no rodapé: frases curtas"
     },
     "hero": {
-      "title": "Título principal na seção hero",
-      "subtitle": "Subtítulo abaixo do título; suporta emoji",
-      "preview_label": "Rótulo para a prévia da aplicação",
+      "title": "Título principal na secção hero",
+      "subtitle": "Subtítulo de apoio; suporta emoji",
+      "preview_label": "Rótulo da imagem de pré-visualização",
       "cta": {
-        "explore_modules": "Botão da hero: ir para módulos",
-        "documentation": "Botão da hero: ir para docs"
+        "explore_modules": "Botão: ir para módulos",
+        "documentation": "Botão: ir para docs"
       }
     },
     "logo_cloud": {
-      "title": "Título da seção acima da grade de marcas",
-      "description": "Texto de introdução sobre marcas confiáveis",
+      "title": "Título da secção de marcas",
+      "description": "Texto inicial a descrever as marcas",
       "brands": "Lista de logos; name usado como alt"
     },
     "features": {
-      "kicker": "Rótulo pequeno acima do título de recursos",
-      "title": "Título principal da seção de recursos",
-      "description": "Parágrafo introdutório da seção de recursos",
-      "cards": "Cartões da grade com ícone (SVG), título e descrição"
+      "kicker": "Rótulo pequeno acima do título",
+      "title": "Título da secção de funcionalidades",
+      "description": "Parágrafo introdutório",
+      "cards": "Cartões com ícone (SVG), título e descrição"
     },
     "cta2": {
-      "title": "Título da seção de CTA secundária",
-      "description": "Descrição da seção de CTA secundária",
+      "title": "Título da secção de CTA secundária",
+      "description": "Descrição da CTA secundária",
       "get_started": "Botão principal da CTA secundária",
       "see_docs": "Link para documentação na CTA secundária"
     },
     "showcase": {
-      "kicker": "Rótulo pequeno da seção de demonstração",
+      "kicker": "Rótulo pequeno da secção de demonstração",
       "task": {
         "title": "Título do card de tarefas",
         "description": "Descrição do card de tarefas",
         "demo_label": "Rótulo/ARIA da área de demo"
       },
       "grade": { "demo_label": "Rótulo/ARIA da demo de notas" },
-      "see_how": "Rótulo do botão de demonstração"
+      "see_how": "Rótulo do botão da demonstração"
     },
     "faq": {
-      "kicker": "Rótulo pequeno da seção de FAQ",
+      "kicker": "Rótulo pequeno da secção de FAQ",
       "title": "Título principal da FAQ",
       "description": "Parágrafo introdutório da FAQ",
-      "items": "Cada item contém título e corpo"
+      "items": "Cada item tem título e corpo"
     },
     "footer": {
-      "description": "Slogan próximo ao logo do rodapé",
+      "description": "Slogan junto ao logo do rodapé",
       "col": {
         "product": "Título da coluna: produto",
-        "contact": "Título da coluna: contato",
+        "contact": "Título da coluna: contacto",
         "legal": "Título da coluna: legal"
       },
       "product": {
@@ -153,18 +153,18 @@
         "support": "Link no rodapé: suporte"
       },
       "contact": {
-        "email": "Link no rodapé: e‑mail",
+        "email": "Link no rodapé: email",
         "chat": "Link no rodapé: chat ao vivo",
         "feedback": "Link no rodapé: feedback",
-        "help": "Link no rodapé: central de ajuda"
+        "help": "Link no rodapé: centro de ajuda"
       },
       "legal": {
         "terms": "Link no rodapé: termos de serviço",
         "privacy": "Link no rodapé: política de privacidade",
         "cookie": "Link no rodapé: política de cookies",
-        "gdpr": "Link no rodapé: conformidade GDPR"
+        "gdpr": "Link no rodapé: conformidade RGPD"
       },
-      "copyright": "Linha de direitos autorais no rodapé"
+      "copyright": "Linha de direitos de autor no rodapé"
     },
     "common": {
       "logo_alt": "Texto alternativo do logo do cabeçalho",
@@ -172,3 +172,4 @@
     }
   }
 }
+
