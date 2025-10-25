@@ -8,6 +8,7 @@
     "subtitle": "Browse all Decaf modules and learn how to use them with examples extracted from their documentation.",
     "kicker": "Module",
     "see_examples": "See Examples",
+    "see_tutorials": "See Tutorials",
     "demo_label": "Module Examples",
     "no_examples": "No examples available yet.",
     "demo_icon": "<svg width=\"40\" height=\"40\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"text-red-300\"><path d=\"M9 12L11 14L15 10\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>"
@@ -26,30 +27,99 @@
       "load_failed": "Failed to load examples data."
     },
     "modules": {
-      "fallback": { "title": "Examples for {module}", "summary": "Usage examples and best practices for {module}." },
-      "decoration": { "title": "Decoration", "summary": "Decorators and metadata helpers for TypeScript." },
-      "logging": { "title": "Logging", "summary": "Structured logging utilities and integrations." },
-      "utils": { "title": "Utils", "summary": "General purpose utilities for Decaf projects." },
-      "reflection": { "title": "Reflection", "summary": "Runtime type reflection helpers and metadata." },
-      "decorator-validation": { "title": "Decorator Validation", "summary": "Validation patterns powered by decorators." },
-      "injectable-decorators": { "title": "Injectable Decorators", "summary": "Dependency injection friendly decorators." },
-      "as-zod": { "title": "As Zod", "summary": "Zod-related helpers and schema bridges." },
-      "db-decorators": { "title": "DB Decorators", "summary": "Database mapping and access via decorators." },
-      "transactional-decorators": { "title": "Transactional Decorators", "summary": "Transaction handling with decorators." },
-      "core": { "title": "Core", "summary": "Core shared primitives across Decaf modules." },
-      "for-http": { "title": "For HTTP", "summary": "HTTP client/server integrations and helpers." },
-      "ui-decorators": { "title": "UI Decorators", "summary": "UI patterns enabled by decorators." },
+      "fallback": {
+        "title": "Examples for {module}",
+        "summary": "Usage examples and best practices for {module}."
+      },
+      "decoration": {
+        "title": "Decoration",
+        "summary": "Decorators and metadata helpers for TypeScript."
+      },
+      "logging": {
+        "title": "Logging",
+        "summary": "Structured logging utilities and integrations."
+      },
+      "utils": {
+        "title": "Utils",
+        "summary": "General purpose utilities for Decaf projects."
+      },
+      "reflection": {
+        "title": "Reflection",
+        "summary": "Runtime type reflection helpers and metadata."
+      },
+      "decorator-validation": {
+        "title": "Decorator Validation",
+        "summary": "Validation patterns powered by decorators."
+      },
+      "injectable-decorators": {
+        "title": "Injectable Decorators",
+        "summary": "Dependency injection friendly decorators."
+      },
+      "as-zod": {
+        "title": "As Zod",
+        "summary": "Zod-related helpers and schema bridges."
+      },
+      "db-decorators": {
+        "title": "DB Decorators",
+        "summary": "Database mapping and access via decorators."
+      },
+      "transactional-decorators": {
+        "title": "Transactional Decorators",
+        "summary": "Transaction handling with decorators."
+      },
+      "core": {
+        "title": "Core",
+        "summary": "Core shared primitives across Decaf modules."
+      },
+      "for-http": {
+        "title": "For HTTP",
+        "summary": "HTTP client/server integrations and helpers."
+      },
+      "ui-decorators": {
+        "title": "UI Decorators",
+        "summary": "UI patterns enabled by decorators."
+      },
       "cli": { "title": "CLI", "summary": "Command line tools and helpers." },
-      "for-couchdb": { "title": "For CouchDB", "summary": "CouchDB helpers and integrations." },
-      "for-nano": { "title": "For Nano", "summary": "Nano-based database helpers." },
-      "for-pouch": { "title": "For Pouch", "summary": "PouchDB helpers and integrations." },
-      "for-typeorm": { "title": "For TypeORM", "summary": "TypeORM helpers and patterns." },
-      "for-fabric": { "title": "For Fabric", "summary": "Hyperledger Fabric tooling and examples." },
-      "for-nest": { "title": "For Nest", "summary": "NestJS integrations and decorators." },
-      "styles": { "title": "Styles", "summary": "Shared styles and tokens for UI." },
-      "for-angular": { "title": "For Angular", "summary": "Angular integrations and helpers." },
-      "mcp-server": { "title": "MCP Server", "summary": "Model Context Protocol server components." },
-      "for-react-native": { "title": "For React Native", "summary": "React Native integrations and helpers." },
+      "for-couchdb": {
+        "title": "For CouchDB",
+        "summary": "CouchDB helpers and integrations."
+      },
+      "for-nano": {
+        "title": "For Nano",
+        "summary": "Nano-based database helpers."
+      },
+      "for-pouch": {
+        "title": "For Pouch",
+        "summary": "PouchDB helpers and integrations."
+      },
+      "for-typeorm": {
+        "title": "For TypeORM",
+        "summary": "TypeORM helpers and patterns."
+      },
+      "for-fabric": {
+        "title": "For Fabric",
+        "summary": "Hyperledger Fabric tooling and examples."
+      },
+      "for-nest": {
+        "title": "For Nest",
+        "summary": "NestJS integrations and decorators."
+      },
+      "styles": {
+        "title": "Styles",
+        "summary": "Shared styles and tokens for UI."
+      },
+      "for-angular": {
+        "title": "For Angular",
+        "summary": "Angular integrations and helpers."
+      },
+      "mcp-server": {
+        "title": "MCP Server",
+        "summary": "Model Context Protocol server components."
+      },
+      "for-react-native": {
+        "title": "For React Native",
+        "summary": "React Native integrations and helpers."
+      },
       "demo": { "title": "Demo", "summary": "Demonstration module." }
     }
   },
@@ -84,11 +154,26 @@
     "title": "Trusted around the world",
     "description": "Leading renowned brands uniting for relentless innovation and exceptional excellence, forging truly groundbreaking digital solutions.",
     "brands": [
-      { "name": "Transistor", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg" },
-      { "name": "Reform", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg" },
-      { "name": "Tuple", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg" },
-      { "name": "SavvyCal", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg" },
-      { "name": "Statamic", "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg" }
+      {
+        "name": "Transistor",
+        "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg"
+      },
+      {
+        "name": "Reform",
+        "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg"
+      },
+      {
+        "name": "Tuple",
+        "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg"
+      },
+      {
+        "name": "SavvyCal",
+        "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg"
+      },
+      {
+        "name": "Statamic",
+        "src": "https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg"
+      }
     ]
   },
   "features": {
@@ -96,13 +181,96 @@
     "title": "Discover the Power of Modules",
     "description": "Decaf offers a suite of modules to streamline your development. Each module enhances functionality while keeping your workflow efficient.",
     "cards": [
-      { "title": "Seamless Styling", "description": "Unlock the full potential of your projects with Decaf's modular tools.",
-        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"Sliders\"><g id=\"Group\"><circle cx=\"6.8\" cy=\"16.5\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"15.6\" cy=\"10.7\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"24.3\" cy=\"20.4\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M6.8 4.9V13.6\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M24.3 4.9V17.5\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 4.9V7.8\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M6.8 19.4V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M24.3 23.3V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 13.6V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></g></svg>" },
-      { "title": "Headless & Modular", "description": "Browse our complete list of modules to find the perfect solution",
-        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"ListChecks\"><path d=\"M15.6 7.8H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 15.6H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 23.3H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 7.8L6.8 9.7L10.7 5.8\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 15.6L6.8 17.5L10.7 13.6\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 23.3L6.8 25.3L10.7 21.4\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></svg>" },
-      { "title": "Optimized Performance", "description": "Start integrating Decaf modules today to optimize your development workflow.",
-        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"Rocket\"><path d=\"M16 2L26 12L20 18L12 10L16 2Z\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M14 14L18 18\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M6 22L10 18L14 22L10 26L6 22Z\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M2 30L8 28L10 26\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></svg>" }
-    ]
+      {
+        "title": "Seamless Styling",
+        "description": "Unlock the full potential of your projects with Decaf's modular tools.",
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"Sliders\"><g id=\"Group\"><circle cx=\"6.8\" cy=\"16.5\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"15.6\" cy=\"10.7\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"24.3\" cy=\"20.4\" r=\"2.9\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M6.8 4.9V13.6\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M24.3 4.9V17.5\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 4.9V7.8\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M6.8 19.4V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M24.3 23.3V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 13.6V26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></g></svg>"
+      },
+      {
+        "title": "Headless & Modular",
+        "description": "Browse our complete list of modules to find the perfect solution",
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"ListChecks\"><path d=\"M15.6 7.8H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 15.6H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M15.6 23.3H26.3\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 7.8L6.8 9.7L10.7 5.8\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 15.6L6.8 17.5L10.7 13.6\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M4.9 23.3L6.8 25.3L10.7 21.4\" stroke=\"currentColor\" stroke-width=\"1.8\"/></g></svg>"
+      },
+      {
+        "title": "Optimized Performance",
+        "description": "Start integrating Decaf modules today to optimize your development workflow.",
+        "icon": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" class=\"text-gray-900\"><g id=\"Rocket\"><path d=\"M16 2L26 12L20 18L12 10L16 2Z\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\"/></g></svg>"
+      }
+    ],
+    "modules": {
+      "decoration": {
+        "title": "Decoration",
+        "summary": "Decorator helpers and a Metadata runtime to store and query structured metadata.",
+        "features": [
+          {
+            "title": "Composable Decorators",
+            "description": "Define and compose decorators with flavour-specific extensions to adapt to frameworks like Vue or Nest."
+          },
+          {
+            "title": "Metadata Store",
+            "description": "Record and query metadata for classes and members at runtime using a stable API."
+          },
+          {
+            "title": "Property Helpers",
+            "description": "Convenience decorators such as @prop and @description to capture types and human-friendly documentation."
+          }
+        ]
+      },
+      "logging": {
+        "title": "Logging",
+        "summary": "Lightweight structured logging with pluggable factories and handy decorators for method instrumentation.",
+        "features": [
+          {
+            "title": "MiniLogger",
+            "description": "A minimal, context-aware logger with configurable levels and optional theming."
+          },
+          {
+            "title": "Decorators",
+            "description": "Method decorators (log, debug, info, verbose, silly) to consistently instrument calls and benchmarks."
+          },
+          {
+            "title": "Pluggable Backends",
+            "description": "Swap the logger factory to integrate with adapters like Winston without changing call sites."
+          }
+        ]
+      },
+      "utils": {
+        "title": "Utils",
+        "summary": "General purpose utilities for CLI, filesystem, HTTP, and text processing to speed up common tasks.",
+        "features": [
+          {
+            "title": "CLI Helpers",
+            "description": "Abstract Command class, input helpers, and standard output writers for consistent CLI apps."
+          },
+          {
+            "title": "File & Package Utilities",
+            "description": "Helpers to read/write/patch files and inspect package metadata programmatically."
+          },
+          {
+            "title": "Text Processing",
+            "description": "Common string utilities for case conversions, templating and placeholder replacement."
+          }
+        ]
+      },
+      "reflection": {
+        "title": "Reflection",
+        "summary": "Runtime type inspection utilities built on reflect-metadata for validators and metadata-driven systems.",
+        "features": [
+          {
+            "title": "Type Checks",
+            "description": "Validate values against expected types at runtime with high fidelity."
+          },
+          {
+            "title": "Decorator Introspection",
+            "description": "Query class and property decorators to build metadata-driven frameworks."
+          },
+          {
+            "title": "Deep Equality",
+            "description": "Robust isEqual utilities for comparing complex structures including Maps and TypedArrays."
+          }
+        ]
+      }
+    }
   },
   "cta2": {
     "title": "Code Smarter, Build Faster.",
@@ -125,20 +293,57 @@
     "title": "Frequently Asked Questions",
     "description": "Explore our FAQs to learn more about how our platform works, its features, and how it can help you build and manage content with ease.",
     "items": [
-      { "title": "What is Vanilla CMS?", "body": "Vanilla CMS is a powerful Headless CMS designed to help developers and content teams manage and deliver content seamlessly across multiple platforms. It provides a flexible API-based approach for ultimate customization." },
-      { "title": "What types of projects is Vanilla CMS best suited for?", "body": "Vanilla CMS is ideal for websites, mobile apps, e-commerce platforms, SaaS applications, and any digital product that requires a structured and scalable content management solution." },
-      { "title": "Can I integrate Vanilla CMS with my existing tech stack?", "body": "Absolutely! Vanilla CMS is API-first, making it compatible with React, Vue, Next.js, Nuxt.js, Svelte, Flutter, and more. You can fetch content via REST or GraphQL APIs." },
-      { "title": "How is Vanilla CMS different from traditional CMS platforms?", "body": "Unlike traditional CMSs, Vanilla CMS decouples the backend from the frontend, giving developers the freedom to use any technology to display content. This makes it more scalable, faster, and adaptable for modern applications." },
-      { "title": "Does Vanilla CMS support multiple users and roles?", "body": "Yes! Vanilla CMS comes with Role-Based Access Control (RBAC), allowing you to define permissions for different team members, ensuring security and content integrity." },
-      { "title": "Is Vanilla CMS scalable for large enterprises?", "body": "Yes! Our architecture is cloud-based and built for scalability, ensuring your content performs well whether you're a startup or a large enterprise with high traffic demands." }
+      {
+        "title": "What is Vanilla CMS?",
+        "body": "Vanilla CMS is a powerful Headless CMS designed to help developers and content teams manage and deliver content seamlessly across multiple platforms. It provides a flexible API-based approach for ultimate customization."
+      },
+      {
+        "title": "What types of projects is Vanilla CMS best suited for?",
+        "body": "Vanilla CMS is ideal for websites, mobile apps, e-commerce platforms, SaaS applications, and any digital product that requires a structured and scalable content management solution."
+      },
+      {
+        "title": "Can I integrate Vanilla CMS with my existing tech stack?",
+        "body": "Absolutely! Vanilla CMS is API-first, making it compatible with React, Vue, Next.js, Nuxt.js, Svelte, Flutter, and more. You can fetch content via REST or GraphQL APIs."
+      },
+      {
+        "title": "How is Vanilla CMS different from traditional CMS platforms?",
+        "body": "Unlike traditional CMSs, Vanilla CMS decouples the backend from the frontend, giving developers the freedom to use any technology to display content. This makes it more scalable, faster, and adaptable for modern applications."
+      },
+      {
+        "title": "Does Vanilla CMS support multiple users and roles?",
+        "body": "Yes! Vanilla CMS comes with Role-Based Access Control (RBAC), allowing you to define permissions for different team members, ensuring security and content integrity."
+      },
+      {
+        "title": "Is Vanilla CMS scalable for large enterprises?",
+        "body": "Yes! Our architecture is cloud-based and built for scalability, ensuring your content performs well whether you're a startup or a large enterprise with high traffic demands."
+      }
     ]
   },
   "footer": {
     "description": "A Suite for Typescript \nDevelopment",
-    "col": { "product": "Product", "contact": "Contact Us", "legal": "Legal Information" },
-    "product": { "documentation": "Documentation", "api": "API Reference", "blog": "Blog Posts", "support": "Support Center" },
-    "contact": { "email": "Email Us", "chat": "Live Chat", "feedback": "Feedback", "help": "Help Center" },
-    "legal": { "terms": "Terms of Service", "privacy": "Privacy Policy", "cookie": "Cookie Policy", "gdpr": "GDPR Compliance" },
+    "col": {
+      "product": "Product",
+      "contact": "Contact Us",
+      "legal": "Legal Information"
+    },
+    "product": {
+      "documentation": "Documentation",
+      "api": "API Reference",
+      "blog": "Blog Posts",
+      "support": "Support Center"
+    },
+    "contact": {
+      "email": "Email Us",
+      "chat": "Live Chat",
+      "feedback": "Feedback",
+      "help": "Help Center"
+    },
+    "legal": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "cookie": "Cookie Policy",
+      "gdpr": "GDPR Compliance"
+    },
     "copyright": "© 2025 Decaf. All rights reserved."
   },
   "common": { "logo_alt": "Decaf Logo", "brand_alt": "Brand" },
@@ -224,9 +429,177 @@
       },
       "copyright": "Footer copyright line"
     },
-  "common": {
-    "logo_alt": "Alt text for the header logo image",
-    "brand_alt": "Alt text for generic brand logos in grid"
+    "common": {
+      "logo_alt": "Alt text for the header logo image",
+      "brand_alt": "Alt text for generic brand logos in grid"
+    }
+  },
+  "tutorials": {
+    "document_title": "Decaf - Tutorials",
+    "title": "Tutorials — {module}",
+    "subtitle": "High-value, real-life examples and recipes for using {module} in your projects.",
+    "modules": {
+      "decoration": {
+        "items": [
+          {
+            "title": "Add metadata to a class",
+            "summary": "Record a description on a class and read it from the Metadata store.",
+            "code": "import { description, Metadata } from \"@decaf-ts/decoration\";\n\n@description(\"User entity\")\nclass User {\n  @description(\"Primary email address\")\n  email!: string;\n}\n\nconsole.log(Metadata.description(User)); // \"User entity\"\nconsole.log(Metadata.description(User, 'email')); // \"Primary email address\""
+          },
+          {
+            "title": "Add metadata to a property",
+            "summary": "Use @prop and Metadata.set to annotate property types and custom metadata.",
+            "code": "import { prop, Metadata } from \"@decaf-ts/decoration\";\n\nclass Article {\n  @prop()\n  title!: string;\n}\n\nconsole.log(Metadata.type(Article, 'title') === String); // true"
+          },
+          {
+            "title": "Add metadata to a method",
+            "summary": "Record method parameter and return types and read them via Metadata helpers.",
+            "code": "import { Metadata, DecorationKeys } from \"@decaf-ts/decoration\";\n\nclass Service {\n  get(): string { return 'value'; }\n}\n\nMetadata.set(Service, `${DecorationKeys.METHODS}.get.${DecorationKeys.DESIGN_PARAMS}`, []);\nMetadata.set(Service, `${DecorationKeys.METHODS}.get.${DecorationKeys.DESIGN_RETURN}`, String);\nconsole.log(Metadata.methods(Service)); // [\"get\"]"
+          },
+          {
+            "title": "Add metadata to a parameter",
+            "summary": "Capture decorator metadata for method parameters and retrieve design:param types.",
+            "code": "// Use reflect-metadata along with custom parameter decorators to capture args.\nimport 'reflect-metadata';\nfunction Param() { return (t: any, k: string | symbol, idx: number) => { /* store param metadata */ }; }\nclass C { method(@Param() id: string) {} }\n// Reflect.getMetadata('design:paramtypes', C.prototype, 'method')"
+          },
+          {
+            "title": "Create an overridable decorator with args",
+            "summary": "Define a decorator factory that accepts args and register it as an overridable decorator in Decoration.",
+            "code": "import { Decoration } from '@decaf-ts/decoration';\nconst tagFactory = (tag: string) => (target: any) => { target.__tag = tag; };\nDecoration.for('component').define({ decorator: tagFactory, args: ['base'] }).apply();\n@Decoration.for('component').apply()\nclass Base {}"
+          },
+          {
+            "title": "Extend a decorator",
+            "summary": "Append extras to a decoration so that additional behaviours are applied after the base decorators.",
+            "code": "Decoration.for('component').define(((t: any) => { t.__base = true; }) as any).apply();\nDecoration.flavouredAs('web').for('component').extend({ decorator: (platform: string) => (target) => { (target as any).__platform = platform; }, args: ['web'] }).apply();"
+          },
+          {
+            "title": "Override decoration for a flavour",
+            "summary": "Provide a flavour-specific definition that replaces the default decorators for that flavour.",
+            "code": "Decoration.setFlavourResolver(() => 'mobile');\nDecoration.flavouredAs('mobile').for('component').define(((target: any) => { (target as any).__mobile = true; }) as any).apply();"
+          },
+          {
+            "title": "Change the flavour resolver",
+            "summary": "Customize how the system chooses a flavour at runtime based on the target.",
+            "code": "import { Decoration } from '@decaf-ts/decoration';\nDecoration.setFlavourResolver((target) => { return target && (target as any).__platform ? 'web' : 'decaf'; });"
+          }
+        ]
+      },
+      "decorator-validation": {
+        "items": [
+          {
+            "title": "Create and decorate a model class",
+            "summary": "Define a model class and decorate properties with common validators (required, min, max, pattern).",
+            "code": "import { required, min, max, pattern } from '@decaf-ts/decorator-validation';\nclass Product {\n  @required()\n  id!: string;\n\n  @min(0)\n  price!: number;\n\n  @pattern(/^[A-Z]+$/)\n  code!: string;\n}"
+          },
+          {
+            "title": "Create a custom validation decorator and validator",
+            "summary": "Register a validator and expose a decorator that attaches validation metadata for it.",
+            "code": "// Create validator and register it via Validation.registerDecorator; then create a decorator factory that uses Decoration.for(key).define(...) to attach metadata. See src/validation for examples (required, min, max)."
+          },
+          {
+            "title": "Comparison decorators usage (@eq, @diff)",
+            "summary": "Use comparison-style decorators to express constraints between fields and validate them at runtime.",
+            "code": "import { eq, diff } from '@decaf-ts/decorator-validation';\nclass Pair {\n  @eq('otherField')\n  value!: number;\n}"
+          },
+          {
+            "title": "Retrieve validation metadata from a model",
+            "summary": "Use the Metadata/Validation helpers to enumerate validators attached to a model and run validation programmatically.",
+            "code": "import { Validation } from '@decaf-ts/decorator-validation';\nconst errors = Validation.validate(instance); // returns structured errors"
+          },
+          {
+            "title": "Model builder and subclassing examples",
+            "summary": "Build complex models using subclassing, nested models, and builder utilities provided in the module.",
+            "code": "// Use Model and helper builders in decorator-validation/src/model to create nested models and reuse validation decorators across subclasses."
+          }
+        ]
+      }
+    }
+  },
+  "common": { "logo_alt": "Decaf Logo", "brand_alt": "Brand" },
+  "contexts": {
+    "document": { "title": "Browser tab title at the top" },
+    "nav": {
+      "modules": "Top navigation: link to modules page",
+      "features": "Top navigation: scroll to features section",
+      "documentation": "Top navigation: link to docs",
+      "community": "Top navigation: link to community page"
+    },
+    "cta": { "get_started": "Header button: primary CTA" },
+    "banner": {
+      "latest_news": "Small top banner label announcing latest news",
+      "slogans": "Footer random slogan: short catchy one-liners"
+    },
+    "hero": {
+      "title": "Main heading in the hero section",
+      "subtitle": "Subheading under hero title; supports emoji",
+      "preview_label": "Label for the preview window screenshot",
+      "cta": {
+        "explore_modules": "Hero button: navigate to modules",
+        "documentation": "Hero button: navigate to docs"
+      }
+    },
+    "logo_cloud": {
+      "title": "Section heading above brand logo grid",
+      "description": "Lead text describing trusted brands",
+      "brands": "List of brand logos; name used as alt text"
+    },
+    "features": {
+      "kicker": "Small label above features title",
+      "title": "Features section main title",
+      "description": "Intro paragraph for features",
+      "cards": "Grid cards with icon (inline SVG), title, description"
+    },
+    "cta2": {
+      "title": "Secondary CTA section title",
+      "description": "Secondary CTA section description",
+      "get_started": "Secondary CTA primary button",
+      "see_docs": "Secondary CTA link to docs"
+    },
+    "showcase": {
+      "kicker": "Showcase section small label",
+      "task": {
+        "title": "Showcase: task demo card title",
+        "description": "Showcase: task demo card description",
+        "demo_label": "ARIA/label for demo area"
+      },
+      "grade": { "demo_label": "ARIA/label for grades demo area" },
+      "see_how": "Showcase section button label"
+    },
+    "faq": {
+      "kicker": "FAQ section small label",
+      "title": "FAQ main title",
+      "description": "FAQ introduction paragraph",
+      "items": "Each item has title and body"
+    },
+    "footer": {
+      "description": "Tagline near the footer logo",
+      "col": {
+        "product": "Footer column title: product",
+        "contact": "Footer column title: contact",
+        "legal": "Footer column title: legal"
+      },
+      "product": {
+        "documentation": "Footer link: docs",
+        "api": "Footer link: API reference",
+        "blog": "Footer link: blog",
+        "support": "Footer link: support"
+      },
+      "contact": {
+        "email": "Footer link: email",
+        "chat": "Footer link: live chat",
+        "feedback": "Footer link: feedback",
+        "help": "Footer link: help center"
+      },
+      "legal": {
+        "terms": "Footer link: terms of service",
+        "privacy": "Footer link: privacy policy",
+        "cookie": "Footer link: cookie policy",
+        "gdpr": "Footer link: GDPR compliance"
+      },
+      "copyright": "Footer copyright line"
+    },
+    "common": {
+      "logo_alt": "Alt text for the header logo image",
+      "brand_alt": "Alt text for generic brand logos in grid"
+    }
   }
-}
 }
